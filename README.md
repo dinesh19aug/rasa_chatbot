@@ -1,11 +1,11 @@
 # rasa_chatbot
 Simple chat bot built using Rasa and Rasa NLU
 
-#How to train the core
+# How to train the core
 python -m rasa_core.train -d domain.yml -s ./data/stories.md -o models/dialogue
  - This will train the core that is defined in domain and and stories. Domain file contains what intents and actions area allowed, while the story is flow chart of conversation.
 
-#How to test the trained core
+# How to test the trained core
 python -m rasa_core.run -d models/dialogue
 - Think of core testing as testing a rest resoure. When you train and test the core, you are basically testing the flowchart. Ex - The first flow is happy path. 
 Bot: How are you?
